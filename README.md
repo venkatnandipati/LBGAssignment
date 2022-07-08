@@ -1,10 +1,12 @@
 # LBGAssignment
 
-Supported version
-iOS 15 onwards
+Supported 
+
+ version iOS 15 onwards
 
 Requirements
-Xcode 13+ , iOS Simulator/ iPad Device
+
+ Xcode 13+ , iOS Simulator/ iPad Device
 
 How to build
 
@@ -18,21 +20,26 @@ After successfully pod installation open LBGAssignment.xcworkspace file and run 
 
 Key Swift Features
 
-Test-driven development
-MVVM design pattern
-Network call by using Apollo(Third Party)
-Network Reachability
-Protocol-Oriented Programming
-Dependency Injection
-Swiftlint
+Test-driven development 
+
+MVVM design pattern 
+
+Network call by using Apollo(Third Party) 
+
+Network Reachability 
+
+Protocol-Oriented Programming 
+
+Dependency Injection 
+
+Swiftlint 
+
 Storyboard
 
 Pods
 
- pod "Apollo"
- pod 'Kingfisher', '~> 7.0'
- pod 'SwiftLint'
- 
+pod "Apollo" pod 'Kingfisher', '~> 7.0' pod 'SwiftLint'
+
 Screenshots
 
 
