@@ -1,5 +1,9 @@
 # LBGAssignment
 
+LBGAssignment is a simple iPAd application which allows user to see the details of Products which can list of opticals and its details
+
+LBGAssignment application has been developed in Swift 5, following MVVM design pattern and Test-driven development approach. Used Apollo API to get current Optical list information.
+
 Supported 
 
  version iOS 15 onwards
