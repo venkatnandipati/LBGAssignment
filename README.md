@@ -1,15 +1,23 @@
 # LBGAssignment
+
 Supported version
 iOS 15 onwards
+
 Requirements
 Xcode 13+ , iOS Simulator/ iPad Device
 
 How to build
+
 Clone the repository $ git clone (https://github.com/venkatnandipati/LBGAssignment.git)
+
 Open Terminal and move to project location by cd command
+
 pod install (Install pod using this command)
+
 After successfully pod installation open LBGAssignment.xcworkspace file and run on iPad device / simulator
+
 Key Swift Features
+
 Test-driven development
 MVVM design pattern
 Network call by using Apollo(Third Party)
@@ -18,10 +26,12 @@ Protocol-Oriented Programming
 Dependency Injection
 Swiftlint
 Storyboard
+
 Pods
  pod "Apollo"
  pod 'Kingfisher', '~> 7.0'
  pod 'SwiftLint'
+ 
 Screenshots
 
 
