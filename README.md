@@ -28,6 +28,7 @@ Swiftlint
 Storyboard
 
 Pods
+
  pod "Apollo"
  pod 'Kingfisher', '~> 7.0'
  pod 'SwiftLint'
