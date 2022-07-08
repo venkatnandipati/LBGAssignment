@@ -1,0 +1,26 @@
+PODS:
+  - Apollo (0.51.2):
+    - Apollo/Core (= 0.51.2)
+  - Apollo/Core (0.51.2)
+  - Kingfisher (7.3.0)
+  - SwiftLint (0.47.1)
+
+DEPENDENCIES:
+  - Apollo
+  - Kingfisher (~> 7.0)
+  - SwiftLint
+
+SPEC REPOS:
+  trunk:
+    - Apollo
+    - Kingfisher
+    - SwiftLint
+
+SPEC CHECKSUMS:
+  Apollo: e5bc805c3f3556c18edc4eae4e2ea4723cea2318
+  Kingfisher: cdb1189a9223b1bc028816bd47c8b8101a58831c
+  SwiftLint: f80f1be7fa96d30e0aa68e58d45d4ea1ccaac519
+
+PODFILE CHECKSUM: 3c3205c5aa01e55cbe642a21b23e6dbbc54a4788
+
+COCOAPODS: 1.11.3

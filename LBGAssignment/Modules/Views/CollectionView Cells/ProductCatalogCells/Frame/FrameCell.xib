@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="BeausiteClassic-Clear.ttf">
+            <string>BeausiteClassic-Clear</string>
+        </array>
+        <array key="BeausiteClassic-Regular.ttf">
+            <string>BeausiteClassic-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="FrameCell" id="Ma1-CL-Ftf" customClass="FrameCell" customModule="glassworks_ipad_dev" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="420" height="277"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="uh1-o9-vhS">
+                <rect key="frame" x="0.0" y="0.0" width="420" height="277"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WUW-p2-h17">
+                        <rect key="frame" x="0.0" y="0.0" width="420" height="277"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SpectPlaceholder" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Nag-Yu-N0T">
+                                <rect key="frame" x="34" y="26" width="352" height="137"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="137" id="Too-D3-nly"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kamemanen" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LG2-qL-lXg">
+                                <rect key="frame" x="26" y="208" width="105.5" height="18"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="18" id="KsT-cU-WSV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="BeausiteClassic-Clear" family="Beausite Classic" pointSize="18"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hannes" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9tF-Zv-BT0">
+                                <rect key="frame" x="26" y="233" width="63.5" height="18"/>
+                                <fontDescription key="fontDescription" name="BeausiteClassic-Clear" family="Beausite Classic" pointSize="18"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="hFg-AE-apt">
+                                <rect key="frame" x="370" y="227" width="24" height="24"/>
+                                <color key="backgroundColor" red="0.96862745098039216" green="0.96862745098039216" blue="0.98431372549019602" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="d6h-lH-BIg"/>
+                                    <constraint firstAttribute="width" constant="24" id="tge-2v-0nS"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="12" minimumInteritemSpacing="0.0" id="6st-10-8yk">
+                                    <size key="itemSize" width="24" height="24"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                                <connections>
+                                    <outlet property="dataSource" destination="Ma1-CL-Ftf" id="Fp6-km-OsP"/>
+                                    <outlet property="delegate" destination="Ma1-CL-Ftf" id="X63-fL-VWq"/>
+                                </connections>
+                            </collectionView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Out of stock" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5PM-8l-K8K">
+                                <rect key="frame" x="26" y="173" width="97" height="25"/>
+                                <color key="backgroundColor" red="0.93725490196078431" green="0.94117647058823528" blue="0.96470588235294119" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="r94-DL-Say"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="BeausiteClassic-Regular" family="Beausite Classic" pointSize="14"/>
+                                <color key="textColor" red="0.26666666666666666" green="0.38823529411764707" blue="0.41960784313725491" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="gwCornerRadius">
+                                        <real key="value" value="12.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.96862745098039216" green="0.96862745098039216" blue="0.9882352941176471" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Nag-Yu-N0T" firstAttribute="top" secondItem="WUW-p2-h17" secondAttribute="top" constant="26" id="2iS-Fp-Kr8"/>
+                            <constraint firstAttribute="trailing" secondItem="hFg-AE-apt" secondAttribute="trailing" constant="26" id="4eh-k9-pIw"/>
+                            <constraint firstItem="9tF-Zv-BT0" firstAttribute="leading" secondItem="WUW-p2-h17" secondAttribute="leading" constant="26" id="4jn-6P-Ljn"/>
+                            <constraint firstItem="LG2-qL-lXg" firstAttribute="leading" secondItem="WUW-p2-h17" secondAttribute="leading" constant="26" id="Xki-H1-HsM"/>
+                            <constraint firstItem="Nag-Yu-N0T" firstAttribute="leading" secondItem="WUW-p2-h17" secondAttribute="leadingMargin" constant="26" id="bJD-aA-bIt"/>
+                            <constraint firstItem="9tF-Zv-BT0" firstAttribute="top" secondItem="hFg-AE-apt" secondAttribute="top" constant="6" id="fed-rI-bj7"/>
+                            <constraint firstAttribute="bottom" secondItem="9tF-Zv-BT0" secondAttribute="bottom" constant="26" id="jZd-YN-0Bd"/>
+                            <constraint firstItem="9tF-Zv-BT0" firstAttribute="top" secondItem="LG2-qL-lXg" secondAttribute="bottom" constant="7" id="lBL-rT-Z7V"/>
+                            <constraint firstItem="5PM-8l-K8K" firstAttribute="top" secondItem="Nag-Yu-N0T" secondAttribute="bottom" constant="10" id="naO-ww-S02"/>
+                            <constraint firstItem="5PM-8l-K8K" firstAttribute="leading" secondItem="WUW-p2-h17" secondAttribute="leading" constant="26" id="qZe-tn-9bK"/>
+                            <constraint firstAttribute="bottom" secondItem="hFg-AE-apt" secondAttribute="bottom" constant="26" id="r0m-b1-z2g"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Nag-Yu-N0T" secondAttribute="trailing" constant="26" id="tiI-6x-nLA"/>
+                            <constraint firstItem="LG2-qL-lXg" firstAttribute="top" secondItem="5PM-8l-K8K" secondAttribute="bottom" constant="10" id="ul6-tB-z3h"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="gwCornerRadius">
+                                <real key="value" value="12"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="gwBorderColor">
+                                <color key="value" red="0.96862745098039216" green="0.96862745098039216" blue="0.9882352941176471" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" red="0.96862745098039216" green="0.96862745098039216" blue="0.9882352941176471" alpha="1" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstItem="WUW-p2-h17" firstAttribute="leading" secondItem="uh1-o9-vhS" secondAttribute="leading" id="Bab-nV-zqP"/>
+                    <constraint firstItem="WUW-p2-h17" firstAttribute="top" secondItem="uh1-o9-vhS" secondAttribute="top" id="a1s-JS-w52"/>
+                    <constraint firstAttribute="bottom" secondItem="WUW-p2-h17" secondAttribute="bottom" id="glm-nU-tJE"/>
+                    <constraint firstAttribute="trailing" secondItem="WUW-p2-h17" secondAttribute="trailing" id="uBR-LG-PWw"/>
+                </constraints>
+                <userDefinedRuntimeAttributes>
+                    <userDefinedRuntimeAttribute type="color" keyPath="gwBorderColor">
+                        <color key="value" red="0.96862745100000003" green="0.96862745100000003" blue="0.98823529409999999" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    </userDefinedRuntimeAttribute>
+                    <userDefinedRuntimeAttribute type="number" keyPath="gwCornerRadius">
+                        <real key="value" value="12"/>
+                    </userDefinedRuntimeAttribute>
+                </userDefinedRuntimeAttributes>
+            </collectionViewCellContentView>
+            <size key="customSize" width="432" height="258"/>
+            <connections>
+                <outlet property="frameImageView" destination="Nag-Yu-N0T" id="neg-Sg-Xal"/>
+                <outlet property="lblBrandName" destination="LG2-qL-lXg" id="K0N-64-5EL"/>
+                <outlet property="lblFrameName" destination="9tF-Zv-BT0" id="mZJ-Td-AKV"/>
+                <outlet property="lblOutOfStock" destination="5PM-8l-K8K" id="fVq-d9-53l"/>
+                <outlet property="variantCollectionView" destination="hFg-AE-apt" id="ySv-HV-Ikm"/>
+                <outlet property="widconstraintCollectionView" destination="tge-2v-0nS" id="HN4-Y1-vEO"/>
+            </connections>
+            <point key="canvasLocation" x="-386.95652173913044" y="30.46875"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="SpectPlaceholder" width="500" height="400"/>
+    </resources>
+</document>

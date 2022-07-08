@@ -1,0 +1,147 @@
+query ProductsList($filter: ProductFilterInput,$paginationInput: PaginationInput!) {
+  products(filter:$filter,paginationInput:$paginationInput) {
+        total
+        items {
+            id
+            formattedPrice
+            inStock
+            variantsQuantity
+            category
+            madeIn
+            designedIn
+            nosePads
+            nosePadsConstant
+            type
+            typeConstant
+            popularity
+            mainVariant {
+                id
+            }
+            primaryShape
+            primaryShapeConstant
+            secondaryShapeConstant
+            secondaryShape
+            image {
+                url
+            }
+            variantColors {
+            shouldDisplaySecondaryColor
+                primaryColor {
+                id
+                name
+                colorCode
+                }
+                secondaryColor {
+                id
+                name
+                colorCode
+                }
+            }
+            sku
+            model
+            brandId
+            brand {
+                id
+                name
+                productionLocation
+                designLocation
+                shortDisplayName
+            }
+            lastUpdatedBy {
+                id
+                firstName
+                lastName
+            }
+            active
+            priceOf2
+            formattedPriceOf2
+            createdAt
+            updatedAt
+            createdAtString
+            updatedAtString
+            productVariants {
+                id
+                lensDesign
+                lensDesignConstant
+                lensIndex
+                lensIndexConstant
+                coating
+                coatingConstant
+                cyl
+                cylConstant
+                lensOpacity
+                lensOpacityConstant
+                lensColors
+                lensColorsConstant
+                lensProduction
+                lensProductionConstant
+                lensGroup
+                lensGroupConstant
+                sunglassesLenses
+                sunglassesLensesConstant
+                frameSize
+                frameSizeConstant
+                lensTitle
+                lensSubtitle
+                cost
+                primaryMaterial {
+                    name
+                }
+                secondaryMaterial {
+                    name
+                }
+                selectedProductVariant
+                sortOrder
+                primaryMaterial {
+                   id
+                    name
+                }
+                secondaryMaterial {
+                    id
+                    name
+                }
+                variantImages {
+                    url
+                }
+                rfidTags {
+                    id
+                    tag
+                }
+                colorsOptions
+                brandCode
+                createdAt
+                createdAtString
+                formattedPrice
+                formattedPriceOf2
+                name
+                price
+                priceOf2
+                primaryColor {
+                id
+                name
+                colorCode
+                }
+                quantity
+                rfidTags {
+                    tag
+                }
+                secondaryColor {
+                id
+                name
+                colorCode
+                }
+                sku
+                updatedAt
+                updatedAtString
+                name
+                price
+                active
+                width
+                temple
+                bridge
+                formattedSize
+            }
+        }
+   }
+}
+
